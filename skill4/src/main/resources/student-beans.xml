@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Student Bean -->
+
+    <bean id="student" class="com.klu.Student">
+
+        <!-- Constructor Injection -->
+        <constructor-arg value="201"/>
+        <constructor-arg value="Satish"/>
+        <constructor-arg value="Spring Boot"/>
+        <constructor-arg value="2025"/>
+
+        <!-- Setter Injection -->
+        <property name="course" value="Spring Framework"/>
+        <property name="year" value="2026"/>
+
+    </bean>
+
+</beans>
